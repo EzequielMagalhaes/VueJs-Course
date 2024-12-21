@@ -1,4 +1,4 @@
-# guiacliente
+# componentes
 
 ## Project setup
 ```
