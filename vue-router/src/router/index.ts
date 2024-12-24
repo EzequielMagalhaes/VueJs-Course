@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import UserView from '../views/UserView.vue'
+import NestedRoutes from '../views/NestedRoutes.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -17,9 +18,16 @@ const routes: Array<RouteRecordRaw> = [
     component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
   },
   {
-    path: '/user/:id',
+    path: '/user/',
     name: 'user',
-    component: UserView
+    component: UserView,
+    children:[
+      {
+      path:'nested-routes', //Rotas filhas não podem começar com barra 
+      name: 'nested-routes',
+      component: NestedRoutes
+      }
+    ]
   }
 ]
 
