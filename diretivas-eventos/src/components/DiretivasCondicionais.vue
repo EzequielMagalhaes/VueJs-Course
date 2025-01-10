@@ -6,8 +6,9 @@
         <p v-if='mostrarIdade == true'>Idade: {{ cliente.idade }}</p>
         <p v-else>O usuário escondeu sua idade.</p>
         <!-- Vai mostrar única e exclusivamente quando passar pela situação true --> 
-        <p v-show='mostrarIdade === true'>Idade: {{ cliente.idade }} - Método show</p>
+        <p v-show='mostrarIdade === true'>Idade: {{ cliente.idade }} - Método show</p>        
     </div>
+
 <!-- Alguns exemplos de diretivas condicionais do VUE são os atributos: 'v-if', 'v-model','v-else','v-else-if','v-show' -->
 </template>
 

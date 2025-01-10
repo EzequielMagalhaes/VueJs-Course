@@ -7,13 +7,14 @@
   <PropsTeste nome='Ezequiel Magalhães' email='zekiel.dev@gmail.com' idade='21'/>
   <CondicionaisTeste :cliente='dadosDoCliente' :mostrarIdade='true'/>
   <CondicionaisTeste :cliente='dadosDoCliente' :mostrarIdade='false'/>
-
   -->
+  <ClassesCondicionaisTeste :cliente='dadosDoCliente'/>
 </template>
 
 <script>
 //import PropsTeste from './components/Props.vue'
 //import CondicionaisTeste from './components/Condicionais.vue'
+import ClassesCondicionaisTeste from './components/ClassesCondicionais.vue'
 
 export default {
   name: 'App',
@@ -28,6 +29,7 @@ export default {
     }
   },
   components: {
+    ClassesCondicionaisTeste,
     //PropsTeste,
     //CondicionaisTeste
   }
